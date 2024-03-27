@@ -8,7 +8,7 @@ import os
 from PyQt6.QtCore import QDateTime, Qt, QTimer
 from PyQt6.QtWidgets import QFileDialog
 
-from vision import find_symbols
+from .vision import find_symbols
 
 from PyQt6.QtWidgets import (
     QApplication,
