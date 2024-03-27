@@ -5,7 +5,7 @@
 
 import os
 
-from PyQt6.QtCore import QDateTime, Qt, QTimer
+from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtWidgets import QFileDialog
 
 from .vision import find_symbols
@@ -13,26 +13,11 @@ from .vision import find_symbols
 from PyQt6.QtWidgets import (
     QApplication,
     QCheckBox,
-    QComboBox,
-    QDateTimeEdit,
-    QDial,
     QDialog,
-    QGridLayout,
-    QGroupBox,
     QHBoxLayout,
     QLabel,
-    QLineEdit,
-    QProgressBar,
     QPushButton,
     QRadioButton,
-    QScrollBar,
-    QSizePolicy,
-    QSlider,
-    QSpinBox,
-    QStyleFactory,
-    QTableWidget,
-    QTabWidget,
-    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
@@ -50,12 +35,7 @@ class ClassifyDialog(QDialog):
         self.candidate_ids = {}  # id -> index in self.candidates
 
         vbox = QVBoxLayout()
-
-        grid = QGridLayout()
-        # self.pixmap = pixmap = QPixmap(512, 512)
         self.image = image = QLabel()
-        # image.setPixmap(pixmap)
-
         self.symbol_buttons = {}
         self.symbol_classes = {}
         class_box = QWidget()
