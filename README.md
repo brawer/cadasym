@@ -19,16 +19,22 @@ To download the corpus data, see [Releases](https://github.com/brawer/cadasym/re
 ## Structure
 
 The [released ZIP file](https://github.com/brawer/cadasym/releases/) contains
-lots of PNG images. Each image is 256x256 pixel in size, and the symbol is
-located at the exact center of the image.
+lots of PNG images. Each image is 256×256 pixel in size. The symbol in question
+is alwayus located at the exact center of the image. Quite often, there are
+other symbols nearby, or there is an overlapping line — that is exactly what
+makes this an interesting problem. The PNG files are currently in one of these
+folders:
 
-| Category              | Sample                                                                                             |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| `white_circle`        | [<img src="./doc/samples/white_circle.png" width="64" height="64" />](./doc/samples/white_circle.png) |
-| `double_white_circle` |                                                 |
-| `black_dot`           |                                                 |
-| `large_cross`         |                                                 |
-| `other`               |                                                 |
+| Category              | Sample                                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `white_circle`        | [<img src="./doc/samples/white_circle.png" width="64" height="64" />](./doc/samples/white_circle.png)               |
+| `double_white_circle` | [<img src="./doc/samples/double_white_circle.png" width="64" height="64" />](./doc/samples/double_white_circle.png) |
+| `black_dot`           | [<img src="./doc/samples/black_dot.png" width="64" height="64" />](./doc/samples/black_dot.png)                     |
+| `large_cross`         | [<img src="./doc/samples/large_cross.png" width="64" height="64" />](./doc/samples/large_cross.png)                 |
+| `other`               | [<img src="./doc/samples/other.png" width="64" height="64" />](./doc/samples/other.png)                             |
+
+Note: We’ll likely split the `white_circle` category by circle size. But this is rather trivial for a computer (we can just measure
+the circle radius), so we’ll do this later. Also, we’ll likely add more categories over time.
 
 
 ## License
