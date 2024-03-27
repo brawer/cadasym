@@ -39,8 +39,8 @@ the circle radius), so we’ll do this later. Also, we’ll likely add more cate
 
 ## License
 
-To the extent possible under law, we have waived all copyright
-and related or neighboring rights to this work. This work is published
-from Switzerland.
+[Public Domain (CC0-1.0)](https://creativecommons.org/publicdomain/zero/1.0/): To the
+extent possible under law, we have waived all copyright and related or
+neighboring rights to this work. This work is published from Switzerland.
 
 ![Public Domain](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)
