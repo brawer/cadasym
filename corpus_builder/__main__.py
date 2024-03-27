@@ -45,11 +45,11 @@ class ClassifyDialog(QDialog):
         for key, folder, label in [
             ("X", "other", "Other"),
             ("A", "white_circle", "White Circle \u25CB"),
-            ("B", "white_circle_double", "Double White Circle \u29BE"),
+            ("B", "double_white_circle", "Double White Circle \u29BE"),
             ("P", "black_dot", "Black Dot ·"),
             ("Q", "black_circle", "Black Circle \u29BF"),
-            ("T", "cross_small", "Small Cross ×"),
-            ("U", "cross_large", "Big Cross ✛"),
+            ("T", "small_cross", "Small Cross ×"),
+            ("U", "large_cross", "Large Cross ✛"),
         ]:
             button = QRadioButton(f"{key} {label}")
             button.folder = os.path.join("corpus", folder)
