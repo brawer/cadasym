@@ -82,6 +82,7 @@ def find_symbols(pdf):
         sym_img = crop(img, x, y, 256)
         if sym_img.shape[0] != 256 or sym_img.shape[1] != 256:
             continue
+        sym_img = cv2.cvtColor(sym_img, cv2.COLOR_BGR2RGB)
         _, png = cv2.imencode(".png", sym_img)
         result.append((sym_id, png.tobytes()))
         # cv2.imwrite(f'symbol_{sym_id}.png', sym_img)
