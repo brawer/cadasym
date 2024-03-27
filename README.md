@@ -24,7 +24,7 @@ located at the exact center of the image.
 
 | Category              | Sample                                                                                             |
 | --------------------- | -------------------------------------------------------------------------------------------------- |
-| `white_circle`        | [<img src="./doc/samples/white_circle.png" width="64" height="64"](./doc/samples/white_circle.png) |
+| `white_circle`        | [<img src="./doc/samples/white_circle.png" width="64" height="64" />](./doc/samples/white_circle.png) |
 | `double_white_circle` |                                                 |
 | `black_dot`           |                                                 |
 | `large_cross`         |                                                 |
