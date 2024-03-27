@@ -9,7 +9,8 @@ digital workflow, but for most of the 20th century, plans were
 submitted on paper. By analyzing the archived plans, we would like to
 eventually reconstruct the history how buildings have developed over
 time. At the moment, the images in the corpus were all taken from
-cadastral mutation plans supplied by the City of Zürich. In other
+cadastral mutation plans supplied by the [City of
+Zürich](https://www.stadt-zuerich.ch/ted/de/index/geoz.html). In other
 Swiss municipalities, the plans should look identical, but they will
 likely not have used the same equipment for scanning paper plans to
 electronic images.
