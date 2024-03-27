@@ -2,29 +2,32 @@
 
 Cadasym is a corpus for Computer Vision of symbols in cadastral maps.
 
-Whenever a Swiss parcel or building changes its geometry, land surveyors
-are required to submit a so-called “mutation plan” to the local authorities.
-Today, this is done in a completely digital workflow, but for most of
-the 20th century, plans were submitted on paper. By analyzing the
-archived plans, we would like to eventually reconstruct the history
-how cities and villages have changed over time.
+**Background:** Whenever a Swiss parcel or building changes its
+geometry, land surveyors are required to submit a so-called “mutation
+plan” to the local authorities.  Today, this is done in a completely
+digital workflow, but for most of the 20th century, plans were
+submitted on paper. By analyzing the archived plans, we would like to
+eventually reconstruct the history how buildings have developed over
+time. At the moment, the images in the corpus were all taken from
+cadastral mutation plans supplied by the City of Zürich. In other
+Swiss municipalities, the plans should look identical, but they will
+likely not have used the same equipment for scanning paper plans to
+electronic images.
 
-The images from this corpus are useful for testing, evaluating and training
-computer vision systems. The symbol recognition task appears ideal
-for training Convolutional Neural Networks with synthetic training data;
-or maybe it’s enough to go with “old-school” algorithmic computer vision.
-Whatever solution we end up using, we’ll need to evaluate its quality.
+**Purpose:** The images from this corpus are useful for testing,
+evaluating and training computer vision systems. The symbol
+recognition task appears ideal for training Convolutional Neural
+Networks with synthetic training data; or maybe it’s enough to go with
+“old-school” algorithmic computer vision.  Whatever solution we end up
+using, we’ll need to evaluate its quality.
 
-To build this corpus, we wrote an ad-hoc [desktop application](./corpus_builder)
-that extracts image snippet from scanned plans. Human users
-manually classified the image snippets into one of the categories shown below.
+**Corpus building:** To build the corpus, we wrote an ad-hoc [desktop
+application](./corpus_builder) that extracts image snippet from
+scanned plans. Human users manually classified the image snippets into
+one of the categories shown below.
 
-At the moment, the images in the corpus are all taken from cadastral mutation
-plans supplied by the City of Zürich. In other Swiss municipalities, the plans
-should look identical, but they will likely not have used the same equipment
-for scanning paper plans to electronic images.
-
-To download the corpus data, see [Releases](https://github.com/brawer/cadasym/releases/).
+**Data download:** To download the corpus data, see the ZIP file
+in [Releases](https://github.com/brawer/cadasym/releases/).
 
 
 ## Structure
