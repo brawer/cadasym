@@ -4,8 +4,10 @@
 # SPDX-License-Identifier: MIT
 
 import os
+import sys
 
 from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtGui import QColor, QKeyEvent, QPainter, QPen, QPixmap
 from PyQt6.QtWidgets import QFileDialog
 
 from .vision import find_symbols
@@ -22,7 +24,6 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from PyQt6.QtGui import QColor, QKeyEvent, QPainter, QPen, QPixmap
 
 app = None
 
@@ -167,7 +168,7 @@ if __name__ == "__main__":
     dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
     dialog.setNameFilter("PDFs (*.pdf)")
     if not dialog.exec():
-        szs.exit(0)
+        sys.exit(0)
 
     classify_dialog = ClassifyDialog(parent=None)
     for f in dialog.selectedFiles():
