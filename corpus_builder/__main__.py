@@ -47,7 +47,7 @@ class ClassifyDialog(QDialog):
             ("A", "white_circle", "White Circle \u25CB"),
             ("B", "double_white_circle", "Double White Circle \u29BE"),
             ("P", "black_dot", "Black Dot ·"),
-            ("Q", "black_circle", "Black Circle \u29BF"),
+            ("Q", "double_black_circle", "Double Black Circle \u29BF"),
             ("T", "small_cross", "Small Cross ×"),
             ("U", "large_cross", "Large Cross ✛"),
         ]:
