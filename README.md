@@ -1,6 +1,6 @@
 # Cadasym
 
-Cadasym is a corpus for Computer Vision of symbols in cadastral maps.
+Cadasym is a corpus for Computer Vision on symbols in cadastral maps.
 
 **Background:** Whenever a Swiss parcel or building changes its
 geometry, land surveyors are required to submit a so-called “mutation
@@ -34,10 +34,10 @@ in [Releases](https://github.com/brawer/cadasym/releases/).
 ## Structure
 
 The [released ZIP file](https://github.com/brawer/cadasym/releases/) contains
-lots of PNG images. Each image is 256×256 pixel in size. The symbol in question
-is alwayus located at the exact center of the image. Quite often, there are
-other symbols nearby, or there is an overlapping line — that is exactly what
-makes this an interesting problem. The PNG files are currently in one of these
+PNG images, 256×256 pixel in size, where the symbol in question
+is located at the exact **center of the image.** Quite often, there are
+other symbols drawn nearby, or there is an overlapping line. That complication
+is what makes this an interesting problem. The PNG files are currently in one of these
 folders:
 
 | Category              | Sample                                                                                                              |
@@ -45,11 +45,12 @@ folders:
 | `white_circle`        | [<img src="./doc/samples/white_circle.png" width="64" height="64" />](./doc/samples/white_circle.png)               |
 | `double_white_circle` | [<img src="./doc/samples/double_white_circle.png" width="64" height="64" />](./doc/samples/double_white_circle.png) |
 | `black_dot`           | [<img src="./doc/samples/black_dot.png" width="64" height="64" />](./doc/samples/black_dot.png)                     |
+| `double_black_circle` | [<img src="./doc/samples/double_black_circle.png" width="64" height="64" />](./doc/samples/double_black_circle.png) |
 | `large_cross`         | [<img src="./doc/samples/large_cross.png" width="64" height="64" />](./doc/samples/large_cross.png)                 |
 | `other`               | [<img src="./doc/samples/other.png" width="64" height="64" />](./doc/samples/other.png)                             |
 
-Note: We’ll likely split the `white_circle` category by circle size. But this is rather trivial for a computer (we can just measure
-the circle radius), so we’ll do this later. Also, we’ll likely add more categories over time.
+Note: We’ll likely split the `white_circle` category into several categories by circle size. Because this is rather trivial for a computer (we can just measure
+the circle radius), we’ll do this later. Also, we’ll likely add more categories over time.
 
 
 ## License
