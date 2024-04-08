@@ -47,6 +47,7 @@ folders:
 | `black_dot`           | [<img src="./doc/samples/black_dot.png" width="64" height="64" />](./doc/samples/black_dot.png)                     |
 | `double_black_circle` | [<img src="./doc/samples/double_black_circle.png" width="64" height="64" />](./doc/samples/double_black_circle.png) |
 | `large_cross`         | [<img src="./doc/samples/large_cross.png" width="64" height="64" />](./doc/samples/large_cross.png)                 |
+| `triangle`            | [<img src="./doc/samples/triangle.png" width="64" height="64" />](./doc/samples/triangle.png)                 |
 | `other`               | [<img src="./doc/samples/other.png" width="64" height="64" />](./doc/samples/other.png)                             |
 
 Note: We’ll likely split the `white_circle` category into several categories by circle size. Because this is rather trivial for a computer (we can just measure
