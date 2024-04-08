@@ -46,6 +46,7 @@ folders:
 | `double_white_circle` | [<img src="./doc/samples/double_white_circle.png" width="64" height="64" />](./doc/samples/double_white_circle.png) |
 | `black_dot`           | [<img src="./doc/samples/black_dot.png" width="64" height="64" />](./doc/samples/black_dot.png)                     |
 | `double_black_circle` | [<img src="./doc/samples/double_black_circle.png" width="64" height="64" />](./doc/samples/double_black_circle.png) |
+| `small_cross`         | [<img src="./doc/samples/small_cross.png" width="64" height="64" />](./doc/samples/small_cross.png)                 |
 | `large_cross`         | [<img src="./doc/samples/large_cross.png" width="64" height="64" />](./doc/samples/large_cross.png)                 |
 | `triangle`            | [<img src="./doc/samples/triangle.png" width="64" height="64" />](./doc/samples/triangle.png)                 |
 | `other`               | [<img src="./doc/samples/other.png" width="64" height="64" />](./doc/samples/other.png)                             |
