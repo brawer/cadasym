@@ -50,6 +50,7 @@ class ClassifyDialog(QDialog):
             ("Q", "double_black_circle", "Double Black Circle \u29BF"),
             ("T", "small_cross", "Small Cross ×"),
             ("U", "large_cross", "Large Cross ✛"),
+            ("V", "triangle", "Triangle ⟁"),
         ]:
             button = QRadioButton(f"{key} {label}")
             button.folder = os.path.join("corpus", folder)
