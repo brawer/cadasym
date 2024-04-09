@@ -12,7 +12,7 @@ Symbol Class          Precision Recall
 black_dot                  87.9  100.0
 double_white_circle         0.0    0.0
 other                      77.9   93.1
-white_circle               93.9   96.7
+white_circle               94.2   96.7
 ```
 
 Reading example: When the classifier reports `black_dot`, the result is correct
