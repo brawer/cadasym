@@ -10,8 +10,8 @@ $ venv/bin/python3 -m classify cadasym-0.1.3.zip
 Symbol Class          Precision Recall
 --------------------------------------
 black_dot                  87.9  100.0
-double_white_circle         0.0    0.0
-other                      77.9   93.1
+double_white_circle       100.0   68.8
+other                      85.5   93.1
 white_circle               94.2   96.7
 ```
 
