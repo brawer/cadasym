@@ -17,7 +17,8 @@ def classify(png):
     contours, hierarchy = cv2.findContours(
         thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_TC89_KCOS
     )
-    cv2.imwrite("t.png", thresh)
+    if False:
+        cv2.imwrite("thresh.png", thresh)
 
     # Find the leaf contour (leaf = without holes) that is closest
     # to the image center at coordinate (128.0, 128.0).
@@ -46,8 +47,10 @@ def classify_contour(img, contours, hierarchy, c):
         pw, ph = cv2.minAreaRect(parent)[1]
         if pw > 150 or ph > 150:
             return "white_circle"
-    if not white and not has_holes and between(r, 7.5, 9.5):
-        return "black_dot"
+    if not white and not has_holes and between(r, 7.0, 10.2):
+        any_black = not any(has_circle(img, x, y, r + i, 255) for i in range(8, 20, 4))
+        if has_circle(img, x, y, r + 2, 255) and any_black:
+            return "black_dot"
     return None
 
 
@@ -76,3 +79,44 @@ def contour_circle(contour):
         return None, None, None
     (x, y), r = cv2.minEnclosingCircle(contour)
     return x, y, r
+
+
+# Returns true if all pixel on a circle around (cx, cy) with radius r
+# have the given color, ignoring any pixels outside the image.
+def has_circle(img, cx, cy, radius, color):
+    cx, cy, radius = int(cx + 0.5), int(cy + 0.5), int(radius + 0.5)
+    height, width = img.shape[:2]
+    for x, y in circle_pixels(cx, cy, radius):
+        if 0 <= x < width and 0 <= y < height:
+            if img[y, x] != color:
+                return False
+    return True
+
+
+# Midpoint circle algorithm
+def circle_pixels(cx, cy, radius):
+    f = 1 - radius
+    ddf_x = 1
+    ddf_y = -2 * radius
+    x = 0
+    y = radius
+    yield (cx, cy + radius)
+    yield (cx, cy - radius)
+    yield (cx + radius, cy)
+    yield (cx - radius, cy)
+    while x < y:
+        if f >= 0:
+            y -= 1
+            ddf_y += 2
+            f += ddf_y
+        x += 1
+        ddf_x += 2
+        f += ddf_x
+        yield (cx + x, cy + y)
+        yield (cx - x, cy + y)
+        yield (cx + x, cy - y)
+        yield (cx - x, cy - y)
+        yield (cx + y, cy + x)
+        yield (cx - y, cy + x)
+        yield (cx + y, cy - x)
+        yield (cx - y, cy - x)

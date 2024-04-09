@@ -9,16 +9,16 @@ Experimental image classifier for cadastral symbols
 $ venv/bin/python3 -m classify cadasym-0.1.3.zip
 Symbol Class          Precision Recall
 --------------------------------------
-black_dot                  71.8   86.4
+black_dot                  87.9  100.0
 double_white_circle         0.0    0.0
-other                      76.8   91.3
+other                      77.9   93.1
 white_circle               93.9   96.7
 ```
 
 Reading example: When the classifier reports `black_dot`, the result is correct
-in 71.8% of cases (whereas for 28.2% of `black_dot` results, the classifier
-should have returned something else). For 86.4% of the black dot images in the
-corpus, the classifier correctly assigned the `black_dot` label (whereas
-for 13.6% of black dots, the classifier has wrongly returned something else).
+in 87.9% of cases (whereas for 12.1% of `black_dot` results, the classifier
+was wrong and should have returned something else). A recall of 100%
+means that the classifier was always correct for every black dot image
+in the corpus.
 
 For categories with less than 50 test images in the corpus, stats are omitted.
